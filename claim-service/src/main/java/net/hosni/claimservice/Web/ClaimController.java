@@ -18,15 +18,25 @@ public class ClaimController {
 
     private CustomerRestClient customerRestClient;
 
+
+
     public ClaimController(ClaimRepository claimRepository, CustomerRestClient customerRestClient) {
         this.claimRepository = claimRepository;
         this.customerRestClient = customerRestClient;
+
     }
 
 
     @GetMapping("/claims")
     public List<Claim> getAllClaims(){
-        return claimRepository.findAll();
+
+        List<Claim> claimList=claimRepository.findAll();
+
+        claimList.forEach(claim -> {
+            claim.setCustomer(customerRestClient.getCustomerById(claim.getCustomerId()));
+        });
+
+        return claimList;
     }
 
     @GetMapping("/claims/{id}")
