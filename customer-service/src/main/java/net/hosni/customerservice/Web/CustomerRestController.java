@@ -3,9 +3,7 @@ package net.hosni.customerservice.Web;
 
 import net.hosni.customerservice.Entities.Customer;
 import net.hosni.customerservice.Repository.CustomerRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,6 +26,11 @@ public class CustomerRestController {
     @GetMapping("/customers/{id}")
     public Customer customerById(@PathVariable Long id){
         return customerRepository.findById(id).get();
+    }
+
+    @PostMapping("/customers")
+    public Customer createCustomer(@RequestBody Customer customer){
+        return customerRepository.save(customer);
     }
 
 }
