@@ -85,13 +85,13 @@ public class ClaimServiceApplication {
                     Claim.builder()
                             .content("API endpoint not working")
                             .createdAt(LocalDate.now())
-                            .customerId(1L)
+                            .customerId(7L)
                             .status(Status.PENDING)
                             .build(),
                     Claim.builder()
                             .content("missing authentication feature")
                             .createdAt(LocalDate.now())
-                            .customerId(2L)
+                            .customerId(8L)
                             .status(Status.PENDING)
                             .build(),
                     Claim.builder()
