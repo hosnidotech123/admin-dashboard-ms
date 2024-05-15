@@ -18,8 +18,8 @@ public class Claim {
 
     private String content;
 
-    @Enumerated(EnumType.STRING)
-    private Status status;
+//    @Enumerated(EnumType.STRING)
+    private String status;
 
     private LocalDate createdAt;
 

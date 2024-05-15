@@ -11,17 +11,14 @@ spring:
             uri: http://localhost:8082/
             predicates:
               - Path=/claims/**
-
-  application:
-    name: gateway-service
+      globals:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+application:
+  name: gateway-service
 
 server:
-    port: 8888
-
-
-
-
-
-
-
-
+  port: 8888
