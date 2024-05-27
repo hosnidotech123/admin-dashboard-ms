@@ -78,6 +78,12 @@ public class ClaimController {
 
     }
 
+    @DeleteMapping("/claims/{id}")
+    public String deleteClaim(@PathVariable Long id){
+         claimRepository.deleteById(id);
+         return "deleted successfully";
+    }
+
 
 
 

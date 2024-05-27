@@ -64,6 +64,46 @@ public class NotificationServiceApplication {
                             .content("we will send u more servers soon")
                             .createdAt(LocalDate.now())
                             .customerId(8L)
+                            .build(),
+                    Notification.builder()
+                            .content("Your issue with the network has been resolved.")
+                            .createdAt(LocalDate.now())
+                            .customerId(1L)
+                            .build(),
+                    Notification.builder()
+                            .content("The security vulnerability has been patched.")
+                            .createdAt(LocalDate.now())
+                            .customerId(2L)
+                            .build(),
+                    Notification.builder()
+                            .content("New features have been added to your account.")
+                            .createdAt(LocalDate.now())
+                            .customerId(3L)
+                            .build(),
+                    Notification.builder()
+                            .content("Scheduled maintenance will occur this weekend.")
+                            .createdAt(LocalDate.now())
+                            .customerId(4L)
+                            .build(),
+                    Notification.builder()
+                            .content("Your subscription has been renewed.")
+                            .createdAt(LocalDate.now())
+                            .customerId(5L)
+                            .build(),
+                    Notification.builder()
+                            .content("We are experiencing technical difficulties.")
+                            .createdAt(LocalDate.now())
+                            .customerId(6L)
+                            .build(),
+                    Notification.builder()
+                            .content("Your feedback has been received.")
+                            .createdAt(LocalDate.now())
+                            .customerId(7L)
+                            .build(),
+                    Notification.builder()
+                            .content("A new version of the software is available.")
+                            .createdAt(LocalDate.now())
+                            .customerId(8L)
                             .build()
             );
             notificationRepository.saveAll(notificationList);
