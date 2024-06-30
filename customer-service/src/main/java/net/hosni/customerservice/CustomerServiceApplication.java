@@ -27,6 +27,7 @@ public class CustomerServiceApplication {
                             .company("Rex company")
                             .contact("0607080904")
                             .email("lina.hagerty@gmail.com")
+                            .isActivated("true")
                             .image("https://plus.unsplash.com/premium_photo-1688350839154-1a131bccd78a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -34,6 +35,7 @@ public class CustomerServiceApplication {
                             .company("ABC Corporation")
                             .contact("0712345678")
                             .email("john.doe@example.com")
+                            .isActivated("true")
                             .image("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -41,6 +43,7 @@ public class CustomerServiceApplication {
                             .company("XYZ Inc.")
                             .contact("0723456789")
                             .email("jane.smith@example.com")
+                            .isActivated("true")
                             .image("https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -48,6 +51,7 @@ public class CustomerServiceApplication {
                             .company("Tech Solutions")
                             .contact("0734567890")
                             .email("alina.johnson@example.com")
+                            .isActivated("true")
                             .image("https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -55,6 +59,7 @@ public class CustomerServiceApplication {
                             .company("Global Services")
                             .contact("0745678901")
                             .email("toa.williams@example.com")
+                            .isActivated("false")
                             .image("https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -62,6 +67,7 @@ public class CustomerServiceApplication {
                             .company("Innovative Ideas")
                             .contact("0756789012")
                             .email("eve.brown@example.com")
+                            .isActivated("true")
                             .image("https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -69,6 +75,7 @@ public class CustomerServiceApplication {
                             .company("Tech Services")
                             .contact("0745678901")
                             .email("ola.williams@example.com")
+                            .isActivated("true")
                             .image("https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build(),
                     Customer.builder()
@@ -76,6 +83,7 @@ public class CustomerServiceApplication {
                             .company("IOT Services")
                             .contact("0745678901")
                             .email("james.williams@example.com")
+                            .isActivated("true")
                             .image("https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                             .build()
             );

@@ -29,6 +29,7 @@ public interface CustomerRestClient {
         customer.setEmail("not Found");
         customer.setImage("not Found");
         customer.setCompany("not Found");
+        customer.setIsActivated("false");
         customer.setContact("not Found");
 
         return customer;

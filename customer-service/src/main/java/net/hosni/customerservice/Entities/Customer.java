@@ -25,6 +25,8 @@ public class Customer {
 
     private String image;
 
+    private String isActivated;
+
 
 
 

@@ -3,9 +3,12 @@ package net.hosni.customerservice.Web;
 
 import net.hosni.customerservice.Entities.Customer;
 import net.hosni.customerservice.Repository.CustomerRepository;
+import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Field;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @CrossOrigin("*")
@@ -32,6 +35,20 @@ public class CustomerRestController {
     @PostMapping("/customers")
     public Customer createCustomer(@RequestBody Customer customer){
         return customerRepository.save(customer);
+    }
+
+    @PatchMapping("/customers/{id}")
+    public Customer updateCustomer(@PathVariable Long id , @RequestBody Map<String,Object> fields){
+        Customer customer =customerRepository.findById(id).get();
+
+        fields.forEach((key,value)->{
+            Field field = ReflectionUtils.findField(Customer.class, key);
+            field.setAccessible(true);
+            ReflectionUtils.setField(field,customer,value);
+        });
+
+        return customerRepository.save(customer);
+
     }
 
 }
